@@ -1,7 +1,7 @@
 def read_info():
     """ Reads user's info from txt """
 
-    file = open("c:\\Users\\92per\\coding\\tasks\\SafeBank\\accounts.txt",'r')
+    file = open("file path",'r')
     clients_info = []
 
     for line in file:
@@ -67,7 +67,7 @@ def create_account():
     user = get_user()
 
     try:
-        balance = int(input("Please tell us the ammount desired to deposit:"))
+        balance = int(input("Please tell us the amount desired to deposit:"))
     except ValueError:
         print("Please introduce a number.")
 
@@ -79,7 +79,7 @@ def create_account():
 def update_file(people_list):
     """ Adds user to file accounts.txt """
 
-    file = open("c:\\Users\\92per\\coding\\tasks\\SafeBank\\accounts.txt", "w")
+    file = open("file path, "w")
 
     for person in people_list:
         info = f"{person['Name']} {person['Surname']} {person['Year of Birth']} {person['Balance']}\n"
@@ -106,7 +106,7 @@ def deposit_money(user , people_info):
     return user, people_info
 
 def withdraw_money(user, people_info):
-    """Withdraws money from account"""
+    """ Withdraws money from account """
     withdraw = float('inf')
 
     while True:
