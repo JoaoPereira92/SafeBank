@@ -41,7 +41,6 @@ while OPTION != 7:
             user , new_people_info = fc.withdraw_money(user, people_info)
             print(f"Your current balance is {user['Balance']}.\n")
             fc.update_file(new_people_info)
-            print(new_people_info)
 
     elif OPTION == 6:
         fc.update_file(people_info)
