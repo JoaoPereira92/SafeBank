@@ -5,6 +5,7 @@ Using user-defined functions, reading a TXT document,
 and updating it if a user changes or adds new
 information to it.
 
-This project is divided in 4 files.
+This project is divided into 4 files.
 SafeBank.py - Our main program that will then call all other files to work.
-accounts.txt - Which has our users data, in this case 
+accounts.txt - This has our user's data, in this case (First name, Last name, Year of birth, and Money on the account)
+functions.py - This file as all our functions to read
